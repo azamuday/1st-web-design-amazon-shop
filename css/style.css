@@ -1,0 +1,777 @@
+/***** Main Css File *****/
+
+
+/***** Table of Content *****
+
+*Banner and Navbar
+*blog
+*Service
+*Contact
+*About
+*Footer
+
+
+***** End *****/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/***** Banner and Navbar *****/
+
+
+/** banner **/
+
+.banner-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../img/banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: cover;
+}
+.banner-2{
+    position: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color:#000000;
+    color: #ff8200;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+/** logo **/
+
+.banner-3{
+    flex-basis: 20%;
+    padding: 2px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.banner-3 img{
+    width: 50px;
+    height: 50px;
+
+}
+/** navbar **/
+
+.banner-4{
+    flex-basis: 60%;
+}
+.banner-4 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.banner-4 li{
+    display: flex;
+    padding: 0 10px;
+}
+.banner-4 a{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff8200 !important;
+    display: flex;
+    float: left;
+}
+.banner-4 a:hover{
+    color: #fff !important;
+}
+
+/** social icon **/
+
+.banner-5{
+    flex-basis: 20%;
+    padding-top: 10px;
+    text-align: center;
+}
+.banner-5 i{
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+/** text **/
+
+.text-box{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 250px;
+}
+.text-box h2{
+    font-size: 80px;
+    font-weight: bold;
+}
+.text-box P{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 250px;
+}
+.text-box button{
+    color: #ffffff;
+    background-color: #ff8200;
+    padding: 10px 25px;
+    border: 1px solid #ff8200;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.text-box button:hover{
+    color: #000000;
+}
+
+/***** Banner and Navbar responsive ( Mobile ) *****/
+
+@media screen and (max-width: 576px) {
+    
+
+    .banner-1{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(img/banner.jpg);
+        max-width: 100%;
+        height: auto;
+        background-position: cover;
+        padding-bottom: 50px;
+    }
+    .banner-3{
+        width: 100%;
+    }
+    .banner-3{
+        order: 1;
+        flex-basis: 20%;
+    }
+    .banner-4{
+        order: 3;
+        flex-basis: 40%;
+
+
+    }
+    .banner-5{
+        order: 2;
+        display: none;
+        flex-basis: 40%;
+
+    }
+    
+    .text-box{
+        color: #ffffff;
+        text-align: center;
+        padding-top: 150px;
+    }
+    .text-box h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .text-box P{
+        font-size: 15px;
+        text-align: center;
+        padding: 5px 50px;
+    }
+    .text-box button{
+        color: #ffffff;
+        background-color: #ff8200;
+        padding: 6px 12px;
+        border: 1px solid #ff8200;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+        transition: 0.5s;
+    }
+    .text-box button:hover{
+        color: #000000;
+    }
+}
+
+/***** blog *****/
+
+
+.blog-1{
+    padding-top: 50px;
+    height: auto;
+    margin: auto;
+}
+/** text **/
+
+.blog-2{
+    text-align: center;
+}
+.blog-2 h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.blog-2 p{
+    font-size: 18px;
+    padding: 10px 350px;
+}
+
+/** blog card **/
+
+.blog-3{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/** blog img **/
+
+.blog-3 img{
+    width: 300px;
+    height: 180px;
+}
+
+/** blog text **/
+
+.blog-3 p{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/** Blog btn **/
+
+.main-btn{
+    padding: 6px 7px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.main-btn:hover{
+    color: #ff8200;
+}
+/** blog Card **/
+
+.blog-4-1{
+    flex-basis: 32%;
+    background-color:#ff8200;
+    padding: 15px 15px;
+
+}
+.blog-4-2{
+    flex-basis: 32%;
+    background-color: #ff8200;
+    padding: 15px 15px;
+}
+.blog-4-3{
+    flex-basis: 32%;
+    background-color:#ff8200;
+    padding: 15px 15px;
+}
+
+/***** Blog responsive ( Mobile ) *****/
+
+@media screen and (max-width: 576px){
+
+    .blog-1{
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .blog-2{
+        text-align: center;
+    }
+    .blog-2 h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .blog-2 p{
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+    .blog-3{
+        width: 100%;
+        display: block;
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+    .blog-3 img{
+        width: 300px;
+        height: 200px;
+    }
+    .blog-3 p{
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .blog-3 button{
+        padding: 6px 10px;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+    .blog-3 button:hover{
+        color: #ff8200;
+    }
+    .blog-4-1{
+        flex-basis: 30%;
+        margin: 25px 15px;
+        background-color: #ff8200;
+    }
+    .blog-4-2{
+        flex-basis: 30%;
+        margin: 15px 15px;
+        background-color: #ff8200;
+    }
+    .blog-4-3{
+        flex-basis: 30%;
+        margin: 15px 15px;
+        background-color: #ff8200;
+    }
+}
+
+/***** service *****/
+
+
+.service-1{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+.service-2{
+    text-align: center;
+}
+.service-2 h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.service-2 p{
+    font-size: 18px;
+    padding: 10px 350px;
+}
+
+/** service Card **/
+.service-3{
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+}
+.service-3 i{
+    font-size: 30px;
+    padding: 5px 0;
+    color: #000000;
+}
+.service-3 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.service-3 p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px 0;
+}
+.service-4-1{
+    flex-basis: 32%;
+    background-color:#ff8200;
+    padding: 15px 15px;
+}
+.service-4-2{
+    flex-basis: 32%;
+    background-color:#ff8200;
+    padding: 15px 15px;
+}
+.service-4-3{
+    flex-basis: 32%;
+    background-color:#ff8200;
+    padding: 15px 15px;
+}
+
+/***** Service responsive ( Mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .service-1{
+        width: 100%;
+        height: auto;
+    }
+    .service-2{
+        text-align: center;
+    }
+    .service-2 h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .service-2 p{
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+    .service-3{
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        display: block;
+    }
+    .service-3 i{
+        font-size: 25px;
+        padding: 5px 0;
+        color: #000000;
+    }
+    .service-3 h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .service-3 p{
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px 0;
+    }
+    .service-4-1{
+        flex-basis: 30%;
+        background-color:#ff8200;
+        margin: 15px 15px;
+    }
+    .service-4-2{
+        flex-basis: 30%;
+        background-color:#ff8200;
+        margin: 15px 15px;
+    }
+    .service-4-3{
+        flex-basis: 30%;
+        background-color:#ff8200;
+        margin: 15px 15px;
+    }
+    
+}
+
+/***** contact *****/
+
+.contact-1{
+    width: 80%;
+	margin: auto;
+	text-align: center;
+    padding-top: 50px;
+}
+.contact-1 h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contact-1 p{
+    font-size: 18px;
+    padding: 10px 250px;
+}
+.contact-box{
+    justify-content: space-around;
+    background:#ff8200;
+	display: flex;
+}
+/** Contact Form **/
+
+.contact-right{
+    flex-basis: 50%;
+	padding: 40px  40px 0px 60px;
+}
+
+/** Address **/
+
+.contact-left{
+    flex-basis: 50%;
+	padding: 40px  40px 0px 40px;
+	background: black;
+	color: #fff;
+}
+
+/** Contact Form **/
+.input-row{
+    text-align: justify;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.input-group{
+	flex-basis: 45%;
+}
+input{
+	width: 100%;
+	height: 20px;
+    color: #fff;
+    background-color: #000;
+}
+textarea{
+	width:100%;
+	height:80px;
+    color: #fff;
+    background-color: #000;
+}
+button{
+	background: #000000;
+	width: 30%;
+	color: #fff;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition: 1s;
+}
+button:hover{
+	color:#ff8200;
+}
+.contact-1 h3{
+    font-weight: 900;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+/** Address **/
+
+tr td:first-child{
+	padding-right:20px;
+	text-align: justify;
+	justify-content: space-between;
+}
+tr td{
+	padding-top: 50px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
+/***** Contact responsive ( Mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .contact-1{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .contact-1 h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .contact-1 p{
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+    .contact-box{
+        justify-content: space-around;
+        background:#ff8200;
+        display: block;
+    }
+    .contact-right{
+        flex-basis: 50%;
+        padding: 40px  40px 0px 60px;
+    }
+    .contact-left{
+        flex-basis: 50%;
+        padding: 40px  40px 0px 40px;
+        background: black;
+        color: #fff;
+        text-align: center;
+    }
+    .input-row{
+        text-align: justify;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .input-group{
+        flex-basis: 45%;
+    }
+    input{
+        width: 100%;
+        height: 20px;
+    }
+    textarea{
+        width:100%;
+        height:80px;
+    }
+    .btn-3{
+        background: #000000;
+        color: #fff;
+        padding: 8px 8px;
+        transition: 1s;
+    }
+    .btn-3:hover{
+        color:#ff8200;
+    }
+    .contact-1 h3{
+        font-weight: 900;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    tr td:first-child{
+        text-align: justify;
+        justify-content: space-between;
+    }
+    tr td{
+        padding: 30px 0;
+        font-size: 20px;
+        font-weight: 500;
+    } 
+}
+
+/***** about *****/
+
+.about-us{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.about-us h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-us p{
+    font-size: 18px;
+    padding: 10px 50px;
+
+}
+.about-us-1{
+    width: 80%;
+    margin: auto;
+    display: inline-block;
+    background-color: #ff8200;
+    padding: 15px 0;
+}
+
+/** image **/
+
+.about-us-2{
+    padding: 10px 10px;
+}
+.about-us-2 img{
+    width: 60%;
+    height: auto;
+}
+
+/** text **/
+
+.about-us-3{
+    flex-basis: 50%;
+}
+.about-us-3 h3{
+    font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+}
+.about-us-3 p{
+    text-align: justify;
+}
+
+/***** About responsive ( Mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .about-us{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .about-us h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .about-us p{
+        font-size: 15px;
+        padding: 10px 50px;
+        text-align: center;
+    
+    }
+    .about-us-1{
+        display: block;
+        background-color: #ff8200;
+        padding: 15px 0;
+    }
+    .about-us-2{
+        padding: 10px 10px;
+    }
+    .about-us-2 img{
+        width: 300px;
+        height: auto;
+    }
+    .about-us-3 h3{
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .about-us-3 p{
+        text-align: justify;
+    }
+}
+
+/***** footer *****/
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+.footer-1 h3{
+    font-size: 25px;
+	font-weight: 900;
+    padding: 10px 0;
+}
+/** social icon **/
+
+.footer-2 i{
+    font-size: 25px;
+    padding: 0 2px;
+    color: #ff8200;
+    cursor: pointer;
+}
+/** footer copyright text **/
+
+.footer-3{
+	padding: 15px 0;
+	text-align: center;
+}
+.footer-3 i{
+    color: #ff8200;
+
+}
+.footer-3 a{
+	text-decoration: none;
+	color:#ff8200;
+	font-weight: 900;
+    
+}
+
+/***** Footer responsive ( Mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .footer{
+        width: 100%;
+        height: auto;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+    }
+    .footer-1 h3{
+        font-size: 20px;
+        font-weight: 900;
+        padding: 10px 0;
+    }
+    .footer-2 i{
+        font-size: 20px;
+        padding: 0 2px;
+        color: #ff8200;
+    }
+    .footer-3{
+        padding: 15px 0;
+        text-align: center;
+    }
+    .footer-3 i{
+        color: #ff8200;
+    }
+    .footer-3 a{
+        text-decoration: none;
+        color:#ff8200;
+        font-weight: 900;
+        
+    }  
+}
+
+/***** end *****/
