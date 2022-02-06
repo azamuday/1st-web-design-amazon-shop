@@ -1,4 +1,4 @@
 # 1st website Design.
-# 1st Website Design ( amazon-shop )
+# amazon-shop 
 This is a simple websie design by Html, Css and Bootstrap
 Visit This Website <a href="https://azamuday.github.io/amazon-shop/" target="_blank">Amazon Shop</a>
